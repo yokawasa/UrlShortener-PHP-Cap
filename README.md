@@ -8,12 +8,12 @@ An example capistrano capfile for deploying [UrlShortener-PHP](https://github.co
 - Git
 
 ### Installation 
-Download and install Capistrano 3 using gem:
+Download and install Capistrano 3 using gem:  
     $ sudo apt-get install ruby
     $ sudo apt-get install rubygems
     $ sudo gem install capistrano --no-ri --no-rdoc
 
-Also install git & PHP if not yet installed:
+Also install git & PHP if not yet installed:  
     $ sudo apt-get install git
     $ sudo apt-get install php5
 
@@ -31,7 +31,7 @@ Also install git & PHP if not yet installed:
      ./Capfile
 
 ### Usage
-Configure deploying target & database info - UrlShortener-PHP-Cap/config/deploy/production.rb
+Configure deploying target & database info - UrlShortener-PHP-Cap/config/deploy/production.rb  
 
     server '<DeployServer>', user: '<DeployUser>', port: 22, password: fetch(:password), roles: %w{web}
     set :db_server,    '<MySql Server>:<Port>'
@@ -46,7 +46,7 @@ Configure deploying target & database info - UrlShortener-PHP-Cap/config/deploy/
 - \<DB password\>:   MySQL user password for the application
 - \<Database\>:   MySQL Database name
 
-Here are sample configuration
+Here are sample configuration  
     server 'deploying.cloudapp.net', user: 'yoichika', port: 22, password: fetch(:password), roles: %w{web}
      
     set :db_server,    'appdeploydemo.cloudapp.net:3306'
