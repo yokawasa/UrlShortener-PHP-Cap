@@ -33,20 +33,20 @@ Also install git & PHP if not yet installed:
       ./Capfile
 
 ### Usage
-Configure deploying target & database info - UrlShortener-PHP-Cap/config/deploy/production.rb  
+Configure deploying target & database info: **UrlShortener-PHP-Cap/config/deploy/production.rb**  
 
-     server '<DeployServer>', user: '<DeployUser>', port: 22, password: fetch(:password), roles: %w{web}
-     set :db_server,    '<MySql Server>:<Port>'
-     set :db_user,      '<DB User>'
-     set :db_password,  '<DB Password>'
-     set :db_name,      '<Database>'
+     server '<deployserver>', user: '<deployuser>', port: 22, password: fetch(:password), roles: %w{web}
+     set :db_server,    '<mysqlserver>:<port>'
+     set :db_user,      '<dbuser>'
+     set :db_password,  '<dbpassword>'
+     set :db_name,      '<database>'
 
-- \<DeployServer\>: server hostname to deploy  ex) deployserver.cloudapp.net
-- \<DepployUser\>: login user to use for deployment in deploy server  ex) deploy
-- \<MySql Server\>:\<Port\>: MySQL server hostname & Port to which UrlShortener-PHP app connects ex) mysql.cloudapp.net:3306
-- \<DB user\>:   MySQL user for the application
-- \<DB password\>:   MySQL user password for the application
-- \<Database\>:   MySQL Database name
+- \<deployserver\>: server hostname to deploy  ex) deployserver.cloudapp.net
+- \<deployuser\>: login user to use for deployment in deploy server
+- \<mysqlserver\>:\<port\>: MySQL server hostname and port to which UrlShortener-PHP app connects
+- \<dbuser\>:   MySQL user for the application
+- \<dbpassword\>:   MySQL user password for the application
+- \<database\>:   MySQL Database name
 
 Here are sample configuration  
 
