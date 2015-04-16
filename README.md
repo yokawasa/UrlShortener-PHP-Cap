@@ -1,5 +1,5 @@
 # UrlShortener-PHP-Cap
-An example capistrano capfile for deploying [UrlShortener-PHP](https://github.com/yokawasa/UrlShortener-PHP)
+An example [Capistrano](http://capistranorb.com/) Capfile for deploying [UrlShortener-PHP](https://github.com/yokawasa/UrlShortener-PHP)
 
 ## Getting started
 ### Requirements
@@ -56,4 +56,14 @@ Here are sample configuration
      set :db_user,      'demosa'
      set :db_password,  'demosaps'
      set :db_name,      'demo'
+
+
+Once you configure production.rb or whatever deploy target info, run with the following cap command to deploy:  
+
+    $ cap production deploy 
+
+     
+
+
+
 
